@@ -1,0 +1,32 @@
+<div id="content" #content>  
+  <mat-card>  
+    <div class="alert alert-info">  
+        <strong>Render to PDF</strong>  
+    </div>  
+    <div>  
+      <input type="button" value="CPTURE" (click)="captureScreen()"/>  
+    </div>  
+  </mat-card>  
+</div>  
+<div >  
+  <mat-card>  
+    <table class="table" id="contentToConvert">
+      <thead>
+        <tr>
+
+          <th scope="col">Name</th>
+          <th scope="col">Address</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{customer.name}}</td>
+          <td>{{customer.address}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+        
+  </mat-card>  
+</div>  
